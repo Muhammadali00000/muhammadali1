@@ -29,7 +29,11 @@ nav{
     display: none;
 }
 
+body{
+    
+    font-family: "Unbounded", sans-serif !important;
 
+}
 
 
 @media (max-width: 1024px) {
@@ -90,65 +94,90 @@ nav{
 
 
 
-
-
 .main{
+    width: 100%;
+    margin: 200px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     gap: 1px;
-    margin: 1px;
-    margin-top: 150px;
+    
 }
-.card{
-    height: 69vh;
-    background-image: url(./img/Rectangle\ 12.svg);
+
+.toyota_card        {
+    background: url(img/Rectangle\ 12\ \(3\).png) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card1{
-    height: 69vh;
-    background-image: url(./img/Rectangle\ 13.png);
+.toyota_card_2{
+    background: url(img/Rectangle\ 13\ \(1\).png) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card2{
-    height: 69vh;
-    background-image: url(./img/Rectangle\ 12\ \(1\).svg);
+.toyota_card_3{
+    background: url(img/Rectangle\ 12\ \(4\).png) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card3{
-    height: 69vh;
-    background-image: url(./img/Rectangle\ 13.svg);
+.toyota_card_4{
+    background: url(img/Rectangle\ 13\ \(2\).png) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card4{
-    height: 69vh;
-    background-image: url(./img/Rectangle\ 12\ \(2\).svg);
+.toyota_card_5{
+    background: url(img/Rectangle\ 12\ \(5\).png) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card5{
-    background-color: #333333;
+.toyota_card_6{
+    background: url(img/7016c2ede1e3fc3b358792263629dc44\ 1\ \(2\).png) no-repeat center center #3A3B35;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
 }
-.card_img{
-    margin-top: 150px;
-    margin-left: 150px;
-    width: 500px;
-}
-.card_text{
-    margin: 50px;
-    margin-top: 55%;
+.toyota_h2{
     color: white;
 }
-.card_btn{
-    padding: 2px;
+.name_toyota{
+    color: white;
+}
+.rent_btn{
+    background-color: white;
+    padding: 10px;
     width: 100px;
-    border-radius: 15px;
+    border-radius: 25px;
 }
-.card_img2{
-    width: 10px;
-}
-.card_btn2{
-	border: 1px white solid;
-	background-image: none; 
+.btn_miles{
+    border: 1px black solid;
 	background: transparent;
-	background-color: transparent;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
     color: white;
-    padding: 4px;
-    border-radius: 15px;
 }
+.grid-card{
+    padding: 50px;
+}
+
+
+
+
 .main_text{
     display: flex;
     justify-content: space-between;
@@ -227,8 +256,15 @@ nav{
 }
 .img{
     display: flex;
-    justify-content: center;
+   justify-content: space-between;
     gap: 50px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.img img{
+    width: 100%;
 }
 .main_text3{
     display: flex;
@@ -305,22 +341,50 @@ nav{
     justify-content: center;
     margin-top: 100px;
 }
-.card_img_1{
+.img-none{
     display: none;
+    width: 100%;
 }
-
-
-
 
 
 @media (max-width: 1280px) {
     .main{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: 1fr;
     }
-    .card_img{
-        width: 250px;
+    .toyota_card{
+        background: none;
     }
+    .toyota_card_2{
+        background: none;
+    }
+    .toyota_card_3{
+        background: none;
+    }
+    .toyota_card_4{
+        background: none;
+    }
+    .toyota_card_5{
+        background: none;
+    }
+    .toyota_card_6{
+        background: none;
+    }
+    .img-none{
+        display: block;
+        width: 100%;
+    }
+    .toyota_h2{
+        color: black;
+    }
+    .name_toyota{
+        color: black;
+    }
+    .btn_miles{
+        color: black;
+    }
+    
+
     .main_text{
         display: flex;
         flex-wrap: wrap;
@@ -328,6 +392,12 @@ nav{
     .card_circle{
         display: flex;
         flex-wrap: wrap;
+    }
+    .card_circle2 h1{
+        margin-left: -50px;
+    }
+    .card_circle3 h1{
+        margin-left: -50px;
     }
     .main_img{
         width: 450px;
@@ -345,6 +415,7 @@ nav{
     .img{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .main_text3{
         display: flex;

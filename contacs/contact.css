@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    
+    font-family: "Unbounded", sans-serif !important;
+
+}
 nav{
     border: 1px rgb(183, 183, 183) solid;
 }
